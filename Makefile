@@ -14,3 +14,9 @@ CFLAGS = -Wall -Wextra -Oz
 #  # ----------------------------
 
 include $(shell cedev-config --makefile)
+
+.PHONY: rom
+rom: C64BASIC.8xv C64KERN.8xv C64CHAR.8xv
+
+%.8xv: %.ROM
+	convbin -i $< -o $@ -n $* -k 8xv

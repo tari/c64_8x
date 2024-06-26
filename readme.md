@@ -7,6 +7,13 @@ convbin -i KERN.ROM -o C64KERN.8xv -n C64KERN -k 8xv
 convbin -i CHAR.ROM -o C64CHAR.8xv -n C64CHAR -k 8xv
 ```
 
+The ROMs are sometimes referred to by the identifier assigned to each ROM
+chip on the C64 mainboard:
+
+ * U3: BASIC
+ * U4: Kernal
+ * U5: character
+
 # Building
 Make sure you have the latest version of the toolchain.
 ```bash
